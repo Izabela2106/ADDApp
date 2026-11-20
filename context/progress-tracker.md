@@ -2,7 +2,7 @@
 
 ## Current task
 
-**landing-timer** — Timer view is the landing page; visual timers and home removed
+**04-authentication** — Google and GitHub OAuth gate the timer and lists
 
 Status: done
 
@@ -13,6 +13,9 @@ Status: done
 - [x] Home marketing page removed
 - [x] Navbar tabs removed (brand + settings remain)
 - [x] No TypeScript or ESLint errors
+- [x] Unauthenticated visits to / and /lists redirect to /login
+- [x] Login page lists Google and GitHub once their env vars are set
+- [x] Signed-in header shows the account name and Sign out
 
 ## Completed
 
@@ -22,6 +25,7 @@ Status: done
 - **04-visual-timer** — _(removed)_ Visual timers were removed; timer is the sole landing experience.
 - **interval-counter** — Completed-interval count is in the top-right of the digital timer, with no border. Increments when an interval ends; resets when a new timer session starts.
 - **landing-timer** — `/` is the timer. Visual timer code, `/timer`, and the multi-tab navbar are gone.
+- **04-authentication** — Auth.js OAuth (Google and GitHub) with a JWT session. `/login` is public; `/` and `/lists` require a signed-in user. Header shows the account name and Sign out.
 
 ## Open questions
 
