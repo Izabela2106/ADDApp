@@ -12,7 +12,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   callbacks: {
     authorized({ auth: session, request }) {
       const { pathname } = request.nextUrl
-      if (pathname === "/login" || pathname.startsWith("/api/auth")) {
+      if (
+        pathname === "/login" ||
+        pathname.startsWith("/api/auth") ||
+        pathname === "/sw.js" ||
+        pathname === "/manifest.webmanifest"
+      ) {
         return true
       }
       return !!session?.user

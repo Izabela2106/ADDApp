@@ -11,7 +11,7 @@ dhdTimer is an application for running random timers. User can choose a range an
 
 Feature:
 3. adding visaul timers,different colors
-4.pwd
+4. Installable PWA so the timer can open from a phone home screen
 
 ## Core User Flow
 
